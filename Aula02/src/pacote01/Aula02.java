@@ -20,5 +20,13 @@ public class Aula02 {
 
         c2.status();
         c2.rabiscar();
+
+        Sentimento s1 = new Sentimento();
+        s1.tipo = "Amor";
+        s1.intensidade = "Forte";
+        s1.motivo = "Porque ela é 10/10";
+        s1.ativo = false;
+        s1.sentir();
+        s1.status();
     }
 }
