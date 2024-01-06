@@ -8,10 +8,11 @@ public class Conta {
     private float saldo;
     private boolean status;
 
-    public Conta(float saldo, boolean status) { //Metodo Construtor!!!!!
-        this.saldo = 0f;
-        this.status = false;
+    public Conta() {
+        this.setSaldo(0f);
+        this.setStatus(false);
     }
+
     public void dadosConta(){
         System.out.println("Status da Conta: "+this.getTipo());
         System.out.println("Numero da Conta: "+this.getNumConta());
@@ -20,13 +21,13 @@ public class Conta {
         System.out.println("Status da Conta: "+this.isStatus());
     }
     public void abrirConta(String t){
-        setTipo(t);
-        setStatus(true);
+        this.setTipo(t);
+        this.setStatus(true);
 
         if (t =="CC"){
-            setSaldo(50f);
+            this.setSaldo(50f);
         }else if (t=="CP"){
-            setSaldo(100f);
+            this.setSaldo(100f);
         }
     }
     public void fecharConta(){
@@ -40,14 +41,14 @@ public class Conta {
     }
     public void depositar(float v){
         if (status = true){
-            setSaldo(getSaldo()+v);
+            this.setSaldo(getSaldo()+v);
         }else {
             System.out.println("Impossivel efetuar o depósito");
         }
     }
     public void sacar(float v){
         if (status = true){
-            setSaldo(getSaldo()-v);
+            this.setSaldo(getSaldo()-v);
         }else {
             System.out.println("Impossivel efetuar o saque");
         }
@@ -55,12 +56,12 @@ public class Conta {
     }
     public void pagarMensalidade(){
         float   v;
-        if (getTipo()=="CC"){
+        if (this.getTipo()=="CC"){
             v = 12f;
-            setSaldo(getSaldo()-v);
-        } else if (getTipo()=="CP") {
+            this.setSaldo(getSaldo()-v);
+        } else if (this.getTipo()=="CP") {
             v=20f;
-            setSaldo(getSaldo()-v);
+            this.setSaldo(getSaldo()-v);
         }
     }
 
