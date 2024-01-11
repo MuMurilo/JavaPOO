@@ -26,6 +26,7 @@ public class Conta {
 
         if (t =="CC"){
             this.setSaldo(50f);
+            System.out.println("Conta aberta com Sucesso");
         }else if (t=="CP"){
             this.setSaldo(100f);
         }
@@ -37,6 +38,7 @@ public class Conta {
             System.out.println("Conta Com Saldo Negativo(Não Pode ser Fechada)");
         }else{
             setStatus(false);
+            System.out.println("Conta fechada com Sucesso");
         }
     }
     public void depositar(float v){
