@@ -13,19 +13,31 @@ public class Lutador {
     private int empates;
 
     public void apresentar(){
+        System.out.println("Lutador: "+ this.getNome());
+        System.out.println("Origem: "+this.getNacionalidade());
+        System.out.println(this.getIdade() + "Anos");
+        System.out.println(this.getAltura()+"m de altura");
+        System.out.println("Pesando: "+this.getPeso());
+        System.out.println("Da categoria: "+ this.getCategoria());
+        System.out.println("Com o cartel de: "+this.getVitorias()+"V-"+this.getDerrotas()+"D-"+this.getEmpates()+"E");
 
     }
     public void status(){
-
+        System.out.println(this.getNome());
+        System.out.println(this.getPeso());
+        System.out.println(this.getCategoria());
+        System.out.println(this.getVitorias());
+        System.out.println(this.getDerrotas());
+        System.out.println(this.getEmpates());
     }
     public void ganharLuta(){
-
+        this.setVitorias(this.getVitorias()+1);
     }
     public void perderLuta(){
-
+        this.setDerrotas(this.getDerrotas()+1);
     }
     public void empatarLuta(){
-
+        this.setEmpates(this.getEmpates()+1);
     }
 
     public String getNome() {
@@ -66,7 +78,10 @@ public class Lutador {
 
     public void setPeso(float pe) {
         this.peso = pe;
-        setCategoria();
+        this.setCategoria();
+    }
+
+    private void setCategoria() {
     }
 
     public String getCategoria() {
@@ -83,7 +98,7 @@ public class Lutador {
             this.categoria = "Médio";
         } else if (peso<=120.2) {
             this.categoria = "Pesado";
-        } else if (peso>120.2) {
+        } else {
             this.categoria = "Inválido";
         }
     }
