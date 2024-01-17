@@ -13,11 +13,12 @@ public class Lutador {
     private int empates;
 
     public void apresentar(){
-        System.out.println("Lutador: "+ this.getNome());
-        System.out.println("Origem: "+this.getNacionalidade());
-        System.out.println(this.getIdade() + "Anos");
-        System.out.println(this.getAltura()+"m de altura");
-        System.out.println("Pesando: "+this.getPeso());
+        System.out.println("---------------------------------------");
+        System.out.println("IIIIt's TIMEEEEEE!!!! Apresentamos o Lutador: "+ this.getNome());
+        System.out.println("Diretamente de: "+this.getNacionalidade());
+        System.out.println("Com "+this.getIdade() + " Anos");
+        System.out.println("De "+this.getAltura()+"m de altura");
+        System.out.println("Pesando: "+this.getPeso() + "kg");
         System.out.println("Da categoria: "+ this.getCategoria());
         System.out.println("Com o cartel de: "+this.getVitorias()+"V-"+this.getDerrotas()+"D-"+this.getEmpates()+"E");
 
@@ -81,22 +82,18 @@ public class Lutador {
         this.setCategoria();
     }
 
-    private void setCategoria() {
-    }
-
     public String getCategoria() {
         return categoria;
     }
 
-    public void setCategoria(String ca) {
-        this.categoria = ca;
-        if (peso<52.2){
+    private void setCategoria() {
+        if (this.peso<52.2){
             this.categoria = "Inválido";
-        } else if (peso<=70.3) {
+        } else if (this.peso<=70.3) {
             this.categoria= "Leve";
-        } else if (peso<=83.9) {
+        } else if (this.peso<=83.9) {
             this.categoria = "Médio";
-        } else if (peso<=120.2) {
+        } else if (this.peso<=120.2) {
             this.categoria = "Pesado";
         } else {
             this.categoria = "Inválido";
