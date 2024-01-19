@@ -13,7 +13,7 @@ public class Lutador {
     private int empates;
 
     public void apresentar(){
-        System.out.println("---------------------------------------");
+
         System.out.println("IIIIt's TIMEEEEEE!!!! Apresentamos o Lutador: "+ this.getNome());
         System.out.println("Diretamente de: "+this.getNacionalidade());
         System.out.println("Com "+this.getIdade() + " Anos");
@@ -21,7 +21,7 @@ public class Lutador {
         System.out.println("Pesando: "+this.getPeso() + "kg");
         System.out.println("Da categoria: "+ this.getCategoria());
         System.out.println("Com o cartel de: "+this.getVitorias()+"V-"+this.getDerrotas()+"D-"+this.getEmpates()+"E");
-
+        System.out.println("---------------------------------------");
     }
     public void status(){
         System.out.println(this.getNome());
