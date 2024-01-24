@@ -11,8 +11,15 @@ public class Main {
         a1.setIdade(32);
         a1.setSexo("Masculino");
 
+        b1.setNome("Lionel");
+        b1.setMatricula("235689");
+        b1.renovarBolsa();
+        b1.pagarMensalidade();
+
         a1.pagarMensalidade();
+        b1.renovarBolsa();
         System.out.println(a1.toString());
+        System.out.println(b1.toString());
 
     }
 }

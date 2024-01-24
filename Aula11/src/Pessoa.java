@@ -1,6 +1,6 @@
 public abstract class Pessoa {
 
-    private String nome;
+    protected String nome;
     private int idade;
     private String sexo;
 

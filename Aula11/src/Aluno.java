@@ -19,7 +19,7 @@ public class Aluno extends Pessoa{
         this.curso = curso;
     }
 
-    public void pagarMensalidade(){
-        System.out.println("Pagando mensalidade de Aluno!");
+    public  void pagarMensalidade(){
+        System.out.println("Pagando mensalidade de "+this.nome);
     }
 }
