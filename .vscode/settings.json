@@ -1,8 +1,9 @@
 {
     "java.project.sourcePaths": [
         "src",
+        "java-vscode-alura/JavaVscodeAlura/src",
         "Aula03/src/pacote02",
-        "java-vscode-alura/JavaVscodeAlura/src"
+        "Aula03/src"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
