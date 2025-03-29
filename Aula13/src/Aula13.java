@@ -15,7 +15,7 @@ public class Aula13 {
         c.reagir("Vai Apanhar");
         System.out.println("--------------------------------");
         c.reagir(11,45);
-        c.reagir(21,00);
+        c.reagir(21,18);
         System.out.println("--------------------------------");
         c.reagir(true);
         c.reagir(false);
