@@ -3,8 +3,8 @@ package pacote01;
 public class Caneta {
     public String modelo;
     public String cor;
-    private float ponta;
-    protected int carga;
+    public float ponta;
+    public int carga;
     private boolean tampada;
 
     public void status(){
