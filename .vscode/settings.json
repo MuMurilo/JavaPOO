@@ -2,9 +2,11 @@
     "java.project.sourcePaths": [
         "src",
         "java-vscode-alura/JavaVscodeAlura/src",
+        "Curso Nelio/Curso Nelio/src",
+        "Curso Nelio/Curso Nelio/Aula1/src",
         "Aula03/src",
         "Aula02/src",
-        "Curso Nelio/Curso Nelio/src"
+        "Curso Nelio/Curso Nelio/Aula2"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [

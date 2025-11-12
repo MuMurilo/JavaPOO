@@ -14,5 +14,7 @@ public class Principal2 {
 
         area = pi * Math.pow(raio,2.0);
         System.out.printf("A Area do Circulo é: %.4f", area);
+
+        sc.close();
     }
 }
