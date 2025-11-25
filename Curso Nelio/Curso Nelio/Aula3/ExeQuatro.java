@@ -25,8 +25,11 @@ public class ExeQuatro {
 
             C = B-A;
             System.out.printf("Jogo Durou %d Horas", C);
+
+            sc.close();
             sc.close();
         }
+
 
     }
 
